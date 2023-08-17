@@ -24,48 +24,48 @@
                 let airtimeAmountSelf = Number(prompt("Enter amount: "))
                 alert(`#${airtimeAmountSelf}.00 has been sent to your Number.`)
             }
-             // Option2 Airtime-Others
+            // Option2 Airtime-Others
             else if (id === 2) {
                 let airtimeAmountOthers = Number(prompt("Enter amount: "));
                 let airtimeNumber = Number(prompt("Enter Phone Number: "));
                 alert(`#${airtimeAmountOthers}.00 has been sent to +234${airtimeNumber}`);
             }
             // Option3 Trsf-UBA
-            else if(id === 3){
-             let accountNumber = Number(prompt("Enter Recepient account number please: "));
-             let amount = Number(prompt("Enter amount: "))
-            
-             // Pin Check
-            let pinChange = Number(prompt("Enter you pin to confirm transaction"));
-            if (pinChange === pin){
-             alert(`#${amount} was just Transfered to ${accountNumber}`)
-            }
-            else{
-                 alert("You have entered an invalid pin")
-             }
+            else if (id === 3) {
+                let accountNumber = Number(prompt("Enter Recepient account number please: "));
+                let amount = Number(prompt("Enter amount: "))
+
+                // Pin Check
+                let pinChange = Number(prompt("Enter you pin to confirm transaction"));
+                if (pinChange === pin) {
+                    alert(`#${amount} was just Transfered to ${accountNumber}`)
+                }
+                else {
+                    alert("You have entered an invalid pin")
+                }
             }
 
             // Option4 Trsf-Others
             else if (id === 4) {
-                 // Pin Check
+                // Pin Check
                 let pinChange = Number(prompt("Enter you pin to confirm transaction"));
                 if (pinChange === pin) {
-                let accountNumber = Number(prompt("Please enter the bank account number or name of the beneficiary: "));
-                let bankSelect=Number(prompt("Select the beneficiary bank\n1>Access\n2>First Bank\n3>Union"));
-                let amount = Number(prompt("Enter amount: "));
-                alert(`#${amount} was just Transfered to ${accountNumber}`)
+                    let accountNumber = Number(prompt("Please enter the bank account number or name of the beneficiary: "));
+                    let bankSelect = Number(prompt("Select the beneficiary bank\n1>Access\n2>First Bank\n3>Union"));
+                    let amount = Number(prompt("Enter amount: "));
+                    alert(`#${amount} was just Transfered to ${accountNumber}`)
                 }
                 else {
                     alert("You have entered an invalid pin")
                 }
             }
             // Option5 Check-balance
-            else if(id === 5){
-            alert("Shi Shi no Dey Your Account Try Deposit ooo")
-                }
-                else{
-                 alert("Incorrect entry, please select from the options ")
-                }    
+            else if (id === 5) {
+                alert("Shi Shi no Dey Your Account Try Deposit ooo")
+            }
+            else {
+                alert("Incorrect entry, please select from the options ")
+            }
         }
         else {
             alert("Incorrect USSD");
